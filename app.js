@@ -48,3 +48,27 @@ setInterval(() => {
         arrtext.classList.add("animate__animated animate__fadeOutUp"); // Add fade-out to top class
     }, 2500);
   }, 3500);
+
+
+//   
+var swiper = new Swiper('.mySwiper', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true
+    },
+    autoplay: {
+      delay: 1000, /* Delay between slides in milliseconds (3 seconds) */
+      disableOnInteraction: false, /* Keep autoplay running even after interaction */
+    },
+  });
