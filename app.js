@@ -11,7 +11,7 @@ setTimeout(() => {
     }, 1000);
 
     
-   }, 3500);
+   }, 4500);
 //   LOADER
 document.addEventListener("DOMContentLoaded", function() {
     var navbar = document.getElementById("navbar");
