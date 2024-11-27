@@ -27,3 +27,24 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+// CYLCE 
+
+var arr = ["desiging", "definig", "planning", "building", "maintenance", "testing", "deployment"];
+var arrtext=document.getElementById("arr")
+
+var num=0;
+setInterval(() => {
+    // arrtext.className="text-uppercase animate__animated animate__fadeInLeft text-white fw-bolder display-1 px-5"
+    arrtext.innerHTML=arr[num]
+    num++
+    console.log(num);
+    if(num >= arr.length){
+        num=0;
+    }
+    setTimeout(() => {
+        arrtext.classList.remove("animate__animated animate__fadeInDown"); // Remove the fade-in class
+        arrtext.classList.add("animate__animated animate__fadeOutUp"); // Add fade-out to top class
+    }, 2500);
+  }, 3500);
