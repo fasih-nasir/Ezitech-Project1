@@ -162,11 +162,16 @@ ul>li>a {
 }
 
 #laptop {
-  height: 320px;
-  width: 500px;
+   height: 320px;
+  width: 500px; 
   object-fit: cover;
   background-size: cover;
   background-image: url("assets/slider_frame.png");
+}
+@media (max-width:992px) {
+  #laptop{
+    display: none !important;
+  }
 }
 
 /* ABOUT */
